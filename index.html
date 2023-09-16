@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Step By Step</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">
+        <img onclick="window.location.reload" src="img/logo.png" alt="Step By Step" />
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+    </div>
+    <div class="header-right">
+      <select class="selectpicker" data-width="fit">
+        <a href="#ru">
+          <option data-content='<span class="flag-icon flag-icon-ru"></span> RUS'>РУС</option>
+        </a>
+        <a href="#kz">
+          <option data-content='<span class="flag-icon flag-icon-kz"></span> KAZ'>ҚАЗ</option>
+        </a>
+      </select>
+      <a>О нас</a>
+      <a>Услуги</a>
+      <a>Консультация</a>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-content">
+      <h2>ШАГ ЗА ШАГОМ<br />ЗА РУБЕЖ !
+      </h2>
+      <p>Помогаем поступить в зарубежные <br> университеты и школы</p>
+      <a href="#">Записаться на консультацию</a>
+    </div>
+    <div class="hero-img">
+      <img src="img/unsplash_Oalh2MojUuk.png" alt="Hero" />
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="contact">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <a href="#">
+        <p>+7 737 737 77 77</p>
+      </a>
+    </div>
+    <div class="contact">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <a href="#">
+        <p>+7 777 777 77 77</p>
+      </a>
+    </div>
+    <div class="contact">
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      <a href="#">
+        <p>Step By Step</p>
+      </a>
+    </div>
+    <div class="contact">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <a href="#">
+        <p>stepbystep.consulting</p>
+      </a>
+    </div>
+  </div>
+  <div class="services">
+    <h2>Наши услуги</h2>
+    <div class="service">
+      <img src="img/universityLogo.svg" alt="universityLogo" />
+      <h4>Поступление в университеты</h4>
+      <p>Турция</p>
+      <p>Польша</p>
+      <p>Чехия</p>
+      <p>Германия</p>
+      <p>Китай</p>
+    </div>
+    <div class="service">
+      <img src="img/summerLogo.svg" alt="summerLogo" />
+      <h4>Летние языковые курсы</h4>
+      <p>Турция</p>
+      <p>Германия</p>
+    </div>
+    <div class="service">
+      <img src="img/teacherEclipse.svg" alt="teacherEclipse" />
+      <h4>Языковые курсы</h4>
+      <p>Турецкий</p>
+      <p>Польский</p>
+      <p>Чешский</p>
+      <p>Немецкий</p>
+      <p>Китайский</p>
+    </div>
+    <div class="service">
+      <img src="img/tomerLogo.svg" alt="tomerLogo" />
+      <h4>Подготовительные курсы</h4>
+      <p>TÖMER по турецкому языку</p>
+    </div>
+  </div>
+  <div class="schools">
+    <h4>Летние языковые школы</h4>
+    <div class="school">
+      <img src="img/turkey.png" alt="Turkey" />
+      <h4>Турция</h4>
+      <p>2-x месячное языковое приключение в манящей Турции</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="school">
+      <img src="img/germany.png" alt="Germany" />
+      <h4>Германия</h4>
+      <p>Незабываемые 2 месяца в одной из самых развитых стран Европы</p>
+      <button>Подробнее</button>
+    </div>
+  </div>
+  <div class="trip">
+    <div class="trip-left">
+      <h2>4 страны<br>4 столицы</h2>
+      <p>Путешествие по университетам <i>Варшавы, Праги, Братиславы и Вены</i></p>
+      <p>Хотите увидеть и узнать свой будущий университет и город, в котором вы будете жить в Европе?</p>
+      <a href="#">Хочу Поехать!</a>
+    </div>
+    <div class="trip-right"><img src="img/Map.png" alt="Map"></div>
+  </div>
+  <div class="form">
+    <div class="form-left">
+      <h4>Хочешь учиться зарубежом?</h4>
+      <p>Тогда оставь заявку, чтобы записаться на консультацию</p>
+    </div>
+    <div class="form-right">
+      <form action="index.html" id="myForm" method="post" name="google-sheet">
+        <i>Имя</i>
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <i>Номер</i>
+        <input type="tel" name="tellphone" id="1" placeholder="Ваш номер">
+        <i>Чем заинтересовались?</i>
+        <select name="user-service" id="">
+          <option value="" selected disabled>Что вас интересует?</option>
+          <option value="Consulting 1">Consulting</option>
+          <option value="Consulting 2">Consulting</option>
+          <option value="Consulting 3">Consulting</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit" >Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <div class="footer-sections">
+      <h4>Разделы</h4>
+      <a href="#">
+        <p>О нас</p>
+      </a>
+      <a href="#">
+        <p>Услуги</p>
+      </a>
+      <a href="#">
+        <p>Консультация</p>
+      </a>
+    </div>
+    <div class="footer-contacts">
+      <h4>Контакты</h4>
+      <div class="footer-contact">
+        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+        <p>+7 777 777 77 77</p>
+      </div>
+      <div class="footer-contact">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <p>+7 737 737 77 77</p>
+      </div>
+      <div class="footer-contact">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <p>stepbystep.consulting</p>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2023 Step By Step</p>
+    <p>Политика конфиденциальности</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
